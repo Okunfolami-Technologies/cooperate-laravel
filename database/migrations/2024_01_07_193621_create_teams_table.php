@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('bio', 255)->nullable();
             $table->string('position', 255)->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
